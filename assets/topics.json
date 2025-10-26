@@ -1,0 +1,88 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "stage_id": 1,
+      "name": "提出课题更改",
+      "description": "如何向老师提出课题更改",
+      "difficulty": "中等"
+    },
+    {
+      "id": 2,
+      "stage_id": 1,
+      "name": "确定研究方向",
+      "description": "明确研究领域和具体方向",
+      "difficulty": "简单"
+    },
+    {
+      "id": 3,
+      "stage_id": 1,
+      "name": "文献综述",
+      "description": "收集和分析相关文献资料",
+      "difficulty": "困难"
+    },
+    {
+      "id": 4,
+      "stage_id": 2,
+      "name": "中期汇报准备",
+      "description": "准备中期汇报材料和演示",
+      "difficulty": "中等"
+    },
+    {
+      "id": 5,
+      "stage_id": 2,
+      "name": "导师沟通技巧",
+      "description": "如何有效与导师沟通研究进展",
+      "difficulty": "简单"
+    },
+    {
+      "id": 6,
+      "stage_id": 2,
+      "name": "研究问题调整",
+      "description": "根据反馈调整研究问题和目标",
+      "difficulty": "中等"
+    },
+    {
+      "id": 7,
+      "stage_id": 3,
+      "name": "实验设计优化",
+      "description": "优化实验方案和研究方法",
+      "difficulty": "困难"
+    },
+    {
+      "id": 8,
+      "stage_id": 3,
+      "name": "数据分析方法",
+      "description": "选择和应用合适的数据分析方法",
+      "difficulty": "中等"
+    },
+    {
+      "id": 9,
+      "stage_id": 3,
+      "name": "论文结构优化",
+      "description": "优化论文结构和逻辑框架",
+      "difficulty": "中等"
+    },
+    {
+      "id": 10,
+      "stage_id": 4,
+      "name": "答辩PPT制作",
+      "description": "制作清晰有效的答辩演示文稿",
+      "difficulty": "简单"
+    },
+    {
+      "id": 11,
+      "stage_id": 4,
+      "name": "答辩演讲技巧",
+      "description": "提升答辩演讲的表达能力",
+      "difficulty": "中等"
+    },
+    {
+      "id": 12,
+      "stage_id": 4,
+      "name": "问题应对策略",
+      "description": "准备和应对答辩中的各种问题",
+      "difficulty": "困难"
+    }
+  ]
+}

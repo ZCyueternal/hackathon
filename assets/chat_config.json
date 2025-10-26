@@ -1,0 +1,37 @@
+{
+  "chat_interface": {
+    "model_name": "deepseek-chat",
+    "model_url": "https://api.deepseek.com/v1/chat/completions",
+    "api_key_required": true,
+    "interface_params": {
+      "supports_image_upload": true,
+      "supports_image_output": true,
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "system_prompt": "你是一位专业的科研导师助手，专门帮助学生在科研过程中解决问题。请用专业、耐心、鼓励的语气回答学生的问题，提供实用的建议和指导。"
+    },
+    "preset_messages": {
+      "welcome": "您好！我是您的科研助手，可以帮助您解决科研过程中的各种问题。请告诉我您当前遇到的困难或需要帮助的方面。",
+      "stage1_prompts": [
+        "如何确定合适的研究方向？",
+        "怎样提出课题更改申请？",
+        "文献综述应该怎么做？"
+      ],
+      "stage2_prompts": [
+        "如何准备中期汇报？",
+        "怎样与导师有效沟通？",
+        "如何根据反馈调整研究方向？"
+      ],
+      "stage3_prompts": [
+        "如何优化实验设计？",
+        "数据分析方法有哪些？",
+        "怎样完善论文结构？"
+      ],
+      "stage4_prompts": [
+        "如何制作答辩PPT？",
+        "答辩演讲有什么技巧？",
+        "怎样应对答辩中的问题？"
+      ]
+    }
+  }
+}

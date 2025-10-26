@@ -1,0 +1,370 @@
+{
+  "checklists": [
+    {
+      "id": 1,
+      "stage_id": 1,
+      "topic_id": 1,
+      "name": "课题更改准备清单",
+      "items": [
+        {
+          "id": 1,
+          "description": "明确研究问题和目标",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 2,
+          "description": "收集相关文献支持",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 3,
+          "description": "准备更改理由和方案",
+          "completed": false,
+          "weight": 0.4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "stage_id": 1,
+      "topic_id": 2,
+      "name": "研究方向确定清单",
+      "items": [
+        {
+          "id": 4,
+          "description": "分析研究兴趣和专长",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 5,
+          "description": "调研相关研究现状",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 6,
+          "description": "确定研究创新点",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 7,
+          "description": "制定初步研究计划",
+          "completed": false,
+          "weight": 0.25
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "stage_id": 1,
+      "topic_id": 3,
+      "name": "文献综述清单",
+      "items": [
+        {
+          "id": 8,
+          "description": "确定文献检索策略",
+          "completed": false,
+          "weight": 0.2
+        },
+        {
+          "id": 9,
+          "description": "收集核心文献资料",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 10,
+          "description": "分析文献研究脉络",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 11,
+          "description": "撰写文献综述初稿",
+          "completed": false,
+          "weight": 0.2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "stage_id": 2,
+      "topic_id": 4,
+      "name": "中期汇报准备清单",
+      "items": [
+        {
+          "id": 12,
+          "description": "整理研究进展数据",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 13,
+          "description": "制作汇报PPT",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 14,
+          "description": "准备演示文稿",
+          "completed": false,
+          "weight": 0.2
+        },
+        {
+          "id": 15,
+          "description": "演练汇报流程",
+          "completed": false,
+          "weight": 0.2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "stage_id": 2,
+      "topic_id": 5,
+      "name": "导师沟通清单",
+      "items": [
+        {
+          "id": 16,
+          "description": "准备沟通要点",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 17,
+          "description": "整理问题清单",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 18,
+          "description": "准备解决方案",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 19,
+          "description": "记录反馈意见",
+          "completed": false,
+          "weight": 0.25
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "stage_id": 2,
+      "topic_id": 6,
+      "name": "研究调整清单",
+      "items": [
+        {
+          "id": 20,
+          "description": "分析反馈意见",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 21,
+          "description": "制定调整方案",
+          "completed": false,
+          "weight": 0.4
+        },
+        {
+          "id": 22,
+          "description": "更新研究计划",
+          "completed": false,
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "stage_id": 3,
+      "topic_id": 7,
+      "name": "实验优化清单",
+      "items": [
+        {
+          "id": 23,
+          "description": "分析实验问题",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 24,
+          "description": "优化实验设计",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 25,
+          "description": "完善实验流程",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 26,
+          "description": "验证优化效果",
+          "completed": false,
+          "weight": 0.2
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "stage_id": 3,
+      "topic_id": 8,
+      "name": "数据分析清单",
+      "items": [
+        {
+          "id": 27,
+          "description": "整理实验数据",
+          "completed": false,
+          "weight": 0.2
+        },
+        {
+          "id": 28,
+          "description": "选择分析方法",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 29,
+          "description": "执行数据分析",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 30,
+          "description": "解读分析结果",
+          "completed": false,
+          "weight": 0.2
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "stage_id": 3,
+      "topic_id": 9,
+      "name": "论文优化清单",
+      "items": [
+        {
+          "id": 31,
+          "description": "检查论文结构",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 32,
+          "description": "优化逻辑框架",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 33,
+          "description": "完善论证过程",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 34,
+          "description": "校对语言表达",
+          "completed": false,
+          "weight": 0.2
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "stage_id": 4,
+      "topic_id": 10,
+      "name": "PPT制作清单",
+      "items": [
+        {
+          "id": 35,
+          "description": "设计PPT结构",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 36,
+          "description": "制作内容页面",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 37,
+          "description": "优化视觉效果",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 38,
+          "description": "检查演示流程",
+          "completed": false,
+          "weight": 0.2
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "stage_id": 4,
+      "topic_id": 11,
+      "name": "演讲准备清单",
+      "items": [
+        {
+          "id": 39,
+          "description": "准备演讲稿",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 40,
+          "description": "练习时间控制",
+          "completed": false,
+          "weight": 0.2
+        },
+        {
+          "id": 41,
+          "description": "演练肢体语言",
+          "completed": false,
+          "weight": 0.25
+        },
+        {
+          "id": 42,
+          "description": "准备问答环节",
+          "completed": false,
+          "weight": 0.25
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "stage_id": 4,
+      "topic_id": 12,
+      "name": "问题应对清单",
+      "items": [
+        {
+          "id": 43,
+          "description": "预测可能问题",
+          "completed": false,
+          "weight": 0.3
+        },
+        {
+          "id": 44,
+          "description": "准备标准答案",
+          "completed": false,
+          "weight": 0.4
+        },
+        {
+          "id": 45,
+          "description": "练习应对技巧",
+          "completed": false,
+          "weight": 0.3
+        }
+      ]
+    }
+  ]
+}

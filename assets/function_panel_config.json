@@ -1,0 +1,56 @@
+{
+  "function_panel": {
+    "functions": [
+      {
+        "id": 1,
+        "name": "计划查看",
+        "description": "查看当前阶段的详细计划",
+        "button_text": "查看计划",
+        "display_content": "stage_plan",
+        "icon": "📋"
+      },
+      {
+        "id": 2,
+        "name": "情感分析",
+        "description": "分析当前对话的情感倾向",
+        "button_text": "情感分析",
+        "display_content": "emotion_analysis",
+        "icon": "😊"
+      },
+      {
+        "id": 3,
+        "name": "进度统计",
+        "description": "查看整体进度和得分统计",
+        "button_text": "进度统计",
+        "display_content": "progress_stats",
+        "icon": "📊"
+      },
+      {
+        "id": 4,
+        "name": "AI清单",
+        "description": "查看AI生成的任务清单",
+        "button_text": "AI清单",
+        "display_content": "ai_checklist",
+        "icon": "🤖"
+      }
+    ],
+    "display_templates": {
+      "stage_plan": {
+        "title": "阶段计划",
+        "fields": ["目标", "时间安排", "关键任务", "预期成果"]
+      },
+      "emotion_analysis": {
+        "title": "情感分析",
+        "fields": ["情感倾向", "置信度", "建议", "关注点"]
+      },
+      "progress_stats": {
+        "title": "进度统计",
+        "fields": ["阶段完成度", "任务完成数", "当前得分", "预估剩余时间"]
+      },
+      "ai_checklist": {
+        "title": "AI建议清单",
+        "fields": ["优先级", "任务描述", "预计耗时", "完成状态"]
+      }
+    }
+  }
+}

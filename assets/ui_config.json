@@ -1,0 +1,78 @@
+{
+  "app_title": "ReSocial 科研训练系统",
+  "stage_selection": {
+    "title": "选择科研阶段",
+    "description": "请选择您当前所处的科研阶段",
+    "start_button": "开始训练",
+    "continue_button": "继续训练"
+  },
+  "main_interface": {
+    "progress_title": "当前阶段进度",
+    "sidebar": {
+      "topic_selection": "课题选择",
+      "checklist": "任务清单",
+      "collapse": "收起",
+      "expand": "展开"
+    },
+    "chat_interface": {
+      "title": "AI科研助手",
+      "placeholder": "请输入您的问题或描述您的情况...",
+      "send_button": "发送",
+      "clear_button": "清空对话",
+      "thinking": "思考中..."
+    },
+    "function_panel": {
+      "title": "功能面板",
+      "score_display": "当前得分",
+      "current_checklist": "当前清单",
+      "plan_button": "查看计划",
+      "emotion_button": "情感分析",
+      "progress_button": "进度统计"
+    }
+  },
+  "stages": {
+    "stage1": {
+      "name": "开题阶段",
+      "description": "确定研究方向和研究问题"
+    },
+    "stage2": {
+      "name": "中期反馈",
+      "description": "获取导师反馈并调整研究方向"
+    },
+    "stage3": {
+      "name": "修改完善",
+      "description": "根据反馈修改和完善研究内容"
+    },
+    "stage4": {
+      "name": "汇报答辩",
+      "description": "准备和进行研究成果汇报"
+    }
+  },
+  "messages": {
+    "welcome": "欢迎使用科研训练系统！",
+    "select_topic": "请选择一个课题开始训练",
+    "no_topic_selected": "请先选择课题",
+    "checklist_complete": "恭喜！您已完成当前清单",
+    "progress_updated": "进度已更新",
+    "error_loading": "加载数据时出错",
+    "connection_error": "网络连接错误",
+    "api_error": "AI服务暂时不可用"
+  },
+  "buttons": {
+    "back": "返回",
+    "next": "下一步",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "retry": "重试",
+    "help": "帮助"
+  },
+  "labels": {
+    "difficulty": "难度",
+    "progress": "进度",
+    "score": "得分",
+    "completed": "已完成",
+    "pending": "待完成",
+    "total": "总计"
+  }
+}
