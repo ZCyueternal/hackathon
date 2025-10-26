@@ -5,6 +5,7 @@ from modules.data_loader import data_loader
 from modules.session_manager import session_manager
 from modules.progress_tracker import progress_tracker
 from modules.api_client import api_client
+from modules.research_evaluator import research_evaluator
 
 # 加载环境变量
 load_dotenv()
@@ -133,6 +134,11 @@ class UIComponents:
         function_config = self.data_loader.get_function_panel_config()
         functions = function_config.get("function_panel", {}).get("functions", [])
         
+        # 添加研究进度评估按钮
+        if st.button("🔍 研究进度评估", key=f"research_eval{stage_suffix}", use_container_width=True):
+            session_manager.set_selected_topic({"name": "研究进度评估"})
+            st.rerun()
+        
         for func in functions:
             if st.button(f"{func.get('icon', '📋')} {func.get('button_text', '功能')}",
                         key=f"func_{func.get('id')}{stage_suffix}", use_container_width=True):
@@ -187,7 +193,7 @@ class UIComponents:
         # 系统信息和帮助 - 可折叠
         with st.expander("ℹ️ 系统信息", expanded=False):
             st.info("""
-            **ReSocial 科研训练系统** 帮助您：
+            **PaperBuddy 论文搭子** 帮助您：
             - 系统化完成科研各阶段
             - 获得AI导师专业指导
             - 跟踪研究进度和成果
@@ -222,7 +228,7 @@ class UIComponents:
                 # 在阶段选择页面显示简化的侧边栏
                 st.markdown("## 🎓 系统信息")
                 st.info("""
-                **ReSocial 科研训练系统** 帮助您：
+                **PaperBuddy 论文搭子** 帮助您：
                 - 系统化完成科研各阶段
                 - 获得AI导师专业指导
                 - 跟踪研究进度和成果
@@ -254,6 +260,12 @@ class UIComponents:
         ui_config = self.data_loader.get_ui_config()
         main_config = ui_config.get("main_interface", {})
         
+        # 检查是否显示研究进度评估界面
+        selected_topic = session_manager.get_selected_topic()
+        if selected_topic and selected_topic.get("name") == "研究进度评估":
+            self.show_research_evaluation_interface()
+            return
+        
         # 创建四个阶段的标签页
         stages = self.data_loader.get_stages()
         tab_names = [f"{stage.get('icon', '🎓')} {stage.get('name', '')}" for stage in stages]
@@ -280,6 +292,22 @@ class UIComponents:
                 
                 with col2:
                     self.show_function_panel(stage_id=current_stage.get("id"))
+    
+    def show_research_evaluation_interface(self):
+        """
+        显示研究进度评估界面
+        """
+        st.title("🔍 研究进度智能评估")
+        
+        # 返回按钮
+        if st.button("⬅️ 返回主界面", use_container_width=True):
+            session_manager.set_selected_topic(None)
+            st.rerun()
+        
+        st.markdown("---")
+        
+        # 显示研究评估界面
+        research_evaluator.show_evaluation_interface()
 
 # 创建全局 UI 组件实例
 ui_components = UIComponents()

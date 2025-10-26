@@ -21,7 +21,7 @@ class AppConfig:
         """
         ui_config = self.data_loader.get_ui_config()
         st.set_page_config(
-            page_title=ui_config.get("app_title", "ReSocial 科研训练系统"),
+            page_title=ui_config.get("app_title", "PaperBuddy 论文搭子"),
             page_icon="🎓",
             layout="wide",
             initial_sidebar_state="expanded"

@@ -29,10 +29,49 @@ class StageSelection:
     
     def _render_stage_card(self, stage: dict):
         """渲染单个阶段卡片"""
+        # 获取阶段颜色，如果没有则使用默认颜色
+        stage_color = stage.get('color', '#6C757D')
+        stage_id = stage.get('id')
+        
+        # 创建自定义按钮样式 - 为每个阶段创建唯一的CSS类
+        button_style = f"""
+        <style>
+        .stage-button-{stage_id} {{
+            background-color: {stage_color}20 !important;
+            border: 2px solid {stage_color} !important;
+            border-radius: 12px !important;
+            padding: 25px !important;
+            margin: 10px 0 !important;
+            text-align: center !important;
+            min-height: 180px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            color: {stage_color} !important;
+            font-weight: bold !important;
+            width: 100% !important;
+            white-space: pre-line !important;
+        }}
+        .stage-button-{stage_id}:hover {{
+            background-color: {stage_color}30 !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+            border-color: {stage_color} !important;
+        }}
+        </style>
+        """
+        
+        # 渲染按钮样式
+        st.markdown(button_style, unsafe_allow_html=True)
+        
+        # 创建按钮内容 - 使用纯文本格式
+        button_label = f"{stage.get('icon', '📝')}\n\n{stage.get('name', '阶段')}\n\n{stage.get('description', '')}"
+        
         # 创建可直接点击的大框
         if st.button(
-            f"### {stage.get('icon', '📝')} {stage.get('name', '阶段')}\n\n{stage.get('description', '')}",
-            key=f"stage_{stage.get('id')}",
+            button_label,
+            key=f"stage_{stage_id}",
             use_container_width=True,
             help=f"点击进入 {stage.get('name')} 阶段"
         ):
